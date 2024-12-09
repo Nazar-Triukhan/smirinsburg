@@ -1,0 +1,53 @@
+/* Загальні налаштування */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Pacifico;
+  background: teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 4rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+}
+
+/* Перша буква */
+h1::first-letter {
+  color: red;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Зображення */
+img {
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
